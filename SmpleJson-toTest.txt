@@ -5,6 +5,7 @@
   "patientId": 1,
   "doctorId": 1,
   "billDate": "2025-06-03T00:00:00",
+  "totalAmount": "1750",
   "billServices": [
     {
       "serviceId": 1,
