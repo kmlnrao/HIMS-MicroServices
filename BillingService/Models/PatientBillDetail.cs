@@ -2,10 +2,10 @@
 {
     public Bill BillInfo { get; set; }
     public PatientDto PatientInfo { get; set; }
+    public List<BillServiceDto> BillServices { get; set; }
     public List<PaymentDto> PaymentInfo { get; set; }
 }
 
-public List<BillServiceDto> BillServices { get; set; }
 
 public class PatientDto
 {
@@ -14,6 +14,15 @@ public class PatientDto
     public DateTime DateOfBirth { get; set; }
     public string Gender { get; set; }
     public string Phone { get; set; }
+}
+
+public class BillServiceDto
+{
+    public int ServiceId { get; set; }
+    public string ServiceName { get; set; }   // Optional - if fetched from service DB
+    public decimal UnitPrice { get; set; }
+    public int Quantity { get; set; }
+    public decimal TotalPrice { get; set; }
 }
 
 public class PaymentDto
