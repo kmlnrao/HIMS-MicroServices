@@ -1,0 +1,44 @@
+
+// Bills
+
+{
+  "patientId": 1,
+  "doctorId": 1,
+  "billDate": "2025-06-03T00:00:00",
+  "billServices": [
+    {
+      "serviceId": 1,
+      "quantity": 2,
+      "unitPrice": 500.00
+    },
+    {
+      "serviceId": 2,
+      "quantity": 1,
+      "unitPrice": 750.00
+    }
+  ]
+}
+
+
+
+// Payments
+
+{
+  "patientId": 1,
+  "paymentDate": "2025-06-03T12:00:00",
+  "totalPaidAmount": 1750.00,
+  "paymentDetails": [
+    {
+      "billId": 2,
+      "paidAmount": 1000.00,
+      "payMode": "UPI",
+      "referenceNo": "UPI-TXN-1000-20250603"
+    },
+    {
+      "billId": 2,
+      "paidAmount": 750.00,
+      "payMode": "Cash",
+      "referenceNo": "CASH-RECPT-750-20250603"
+    }
+  ]
+}
